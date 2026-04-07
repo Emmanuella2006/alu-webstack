@@ -40,7 +40,7 @@ frontend emmanuella-frontend-http
         default_backend emmanuella-backend
 
 frontend emmanuella-frontend-https
-    bind *:443 ssl crt /etc/haproxy/certs/www.levi02.tech.pem
+    bind *:443 ssl crt /etc/haproxy/certs/www.gacuti.tech.pem
     http-request set-header X-Forwarded-Proto https
     default_backend emmanuella-backend
 

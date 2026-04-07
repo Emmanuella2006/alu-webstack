@@ -33,14 +33,14 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend emmanuell-frontend-http
+frontend emmanuella-frontend-http
         bind *:80
         mode http
 	http-request set-header X-Forwarded-Proto http
         default_backend emmanuella-backend
 
 frontend emmanuella-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.levi02.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.gacuti.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend emmanuella-backend
 
